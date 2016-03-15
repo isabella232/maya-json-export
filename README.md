@@ -12,6 +12,11 @@ This is modified from [Sean Griffin's exporter](https://github.com/mrdoob/three.
 
 This assumes you will be unrolling your vertex data into un-indexed VBO. This was chosen because Maya, unlike WebGL, indexes UVs/Normals/Colors independently of position. See [here](https://github.com/mrdoob/three.js/issues/6926) for discussion.
 
+Motivation:
+
+- Specifically designed for `BufferGeometry` and `InstancedBufferGeometry`
+- Can optimize complex scenes with a lot of repeating elements (e.g. trees)
+
 Exports:
 
 - Vertex positions and their indices
