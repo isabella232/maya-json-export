@@ -31,7 +31,7 @@ See the [demo](http://jam3.github.io/maya-json-exporter/index.html) which was ex
 
 The format roughly looks like this:
 
-```json
+```js
 {
   "metadata": {
     "exporter": "maya-json-export",
