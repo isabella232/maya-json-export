@@ -23,6 +23,7 @@
     "budo": "^8.0.4",
     "uglify-js": "^2.6.2"
   },
+  "private": true,
   "scripts": {
     "test": "node test.js",
     "start": "budo demo/:bundle.js --live -- -t babelify",
