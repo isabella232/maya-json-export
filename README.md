@@ -2,15 +2,21 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-[![demo](http://i.imgur.com/QBdTN1Q.png)](http://jam3.github.io/maya-json-exporter/index.html)
+[<img src="http://i.imgur.com/JQ4i5J9.png" width="75%" />](http://jam3.github.io/maya-json-export/index.html)
 
-> [(demo)](http://jam3.github.io/maya-json-exporter/index.html)
+> [(demo)](http://jam3.github.io/maya-json-export/index.html)
 
 A generic Maya to JSON exporter for triangulated meshes, specifically built for ThreeJS BufferGeometry. Designed for ThreeJS r74 and Maya 2016.
 
 This is modified from [Sean Griffin's exporter](https://github.com/mrdoob/three.js/tree/master/utils/exporters/maya), but designed for static scenes with a lot of instancing (like a forest or city scape).
 
 This assumes you will be unrolling your vertex data into un-indexed VBO. This was chosen because Maya, unlike WebGL, indexes UVs/Normals/Colors independently of position. See [here](https://github.com/mrdoob/three.js/issues/6926) for discussion.
+
+Motivation:
+
+- Specifically designed for `BufferGeometry` and `InstancedBufferGeometry`
+- Can optimize complex scenes with a lot of repeating elements (e.g. trees)
+- Full control over parsing, vertex data, and materials
 
 Exports:
 
@@ -25,13 +31,13 @@ Exports:
 
 ## Demo
 
-See the [demo](http://jam3.github.io/maya-json-exporter/index.html) which was exported with this plugin, and loaded directly into a `BufferGeometry`. 
+See the [demo](http://jam3.github.io/maya-json-export/index.html) which was exported with this plugin, and loaded directly into a `BufferGeometry`. 
 
 ## Export Format
 
 The format roughly looks like this:
 
-```json
+```js
 {
   "metadata": {
     "exporter": "maya-json-export",
@@ -112,6 +118,11 @@ Example paths:
 - Linux: `/usr/autodesk/userconfig/maya/VERSION/`
 
 After that, you need to activate the plugin. In Maya, open `Windows > Settings/Preferences > Plug-in Manager` and enable the checkboxes next to `SimpleJSON.py`.
+
+## Gotchas
+
+- Make sure your meshes are triangulated with `Mesh > Triangulate`
+- You can Export All or Export Selected, but the latter is preferred
 
 ## License
 
