@@ -2,9 +2,9 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-[![demo](http://i.imgur.com/QBdTN1Q.png)](http://jam3.github.io/maya-json-exporter/index.html)
+[![demo](http://i.imgur.com/QBdTN1Q.png)](http://jam3.github.io/maya-json-export/index.html)
 
-> [(demo)](http://jam3.github.io/maya-json-exporter/index.html)
+> [(demo)](http://jam3.github.io/maya-json-export/index.html)
 
 A generic Maya to JSON exporter for triangulated meshes, specifically built for ThreeJS BufferGeometry. Designed for ThreeJS r74 and Maya 2016.
 
@@ -25,7 +25,7 @@ Exports:
 
 ## Demo
 
-See the [demo](http://jam3.github.io/maya-json-exporter/index.html) which was exported with this plugin, and loaded directly into a `BufferGeometry`. 
+See the [demo](http://jam3.github.io/maya-json-export/index.html) which was exported with this plugin, and loaded directly into a `BufferGeometry`. 
 
 ## Export Format
 
