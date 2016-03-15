@@ -2,7 +2,7 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-[![demo](http://i.imgur.com/QBdTN1Q.png)](http://jam3.github.io/maya-json-export/index.html)
+[<img src="http://i.imgur.com/Pa5mfYg.png" width="75%" />](http://jam3.github.io/maya-json-export/index.html)
 
 > [(demo)](http://jam3.github.io/maya-json-export/index.html)
 
