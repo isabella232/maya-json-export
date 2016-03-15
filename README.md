@@ -2,7 +2,7 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-[<img src="http://i.imgur.com/Pa5mfYg.png" width="75%" />](http://jam3.github.io/maya-json-export/index.html)
+[<img src="http://i.imgur.com/JQ4i5J9.png" width="75%" />](http://jam3.github.io/maya-json-export/index.html)
 
 > [(demo)](http://jam3.github.io/maya-json-export/index.html)
 
@@ -16,6 +16,7 @@ Motivation:
 
 - Specifically designed for `BufferGeometry` and `InstancedBufferGeometry`
 - Can optimize complex scenes with a lot of repeating elements (e.g. trees)
+- Full control over parsing, vertex data, and materials
 
 Exports:
 
@@ -117,6 +118,11 @@ Example paths:
 - Linux: `/usr/autodesk/userconfig/maya/VERSION/`
 
 After that, you need to activate the plugin. In Maya, open `Windows > Settings/Preferences > Plug-in Manager` and enable the checkboxes next to `SimpleJSON.py`.
+
+## Gotchas
+
+- Make sure your meshes are triangulated with `Mesh > Triangulate`
+- You can Export All or Export Selected, but the latter is preferred
 
 ## License
 

@@ -6,7 +6,6 @@ module.exports = function (src, cb) {
   const container = new THREE.Object3D();
   request(src, { json: true }, (err, json) => {
     if (err) return cb(err);
-
     const geometries = {};
     Object.keys(json.geometries).forEach(k => {
       const buffer = new THREE.BufferGeometry();
@@ -51,7 +50,7 @@ module.exports = function (src, cb) {
     const materials = json.materials.map(material => {
       const loader = new THREE.TextureLoader();
       const map = material.mapDiffuse
-        ? loader.load(`demo/${material.mapDiffuse}`)
+        ? loader.load(`${material.mapDiffuse}`)
         : undefined;
       if (map) {
         return new THREE.MeshBasicMaterial({
