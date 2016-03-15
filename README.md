@@ -113,10 +113,6 @@ Example paths:
 
 After that, you need to activate the plugin. In Maya, open `Windows > Settings/Preferences > Plug-in Manager` and enable the checkboxes next to `SimpleJSON.py`.
 
-## Usage
-
-[![NPM](https://nodei.co/npm/maya-json-export.png)](https://www.npmjs.com/package/maya-json-export)
-
 ## License
 
 MIT, see [LICENSE.md](http://github.com/Jam3/maya-json-export/blob/master/LICENSE.md) for details.
